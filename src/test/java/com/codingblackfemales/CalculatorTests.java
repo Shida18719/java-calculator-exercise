@@ -25,10 +25,25 @@ public class CalculatorTests {
     }
 
     @Test
-    @DisplayName("divide two numbers")
+    @DisplayName("multiply two numbers")
+    public void testMultiplication() {
+        final Integer multiply = Calculator.multiply(2, 0);
+
+        assertEquals(0, multiply);
+    }
+
+    @Test
+    @DisplayName("divide two negative numbers")
     public void testDivision() {
         final Integer divide = Calculator.divide(-8, -4);
 
         assertEquals(2, divide);
     }
+
+    // @Test
+    // @DisplayName("divide two numbers to return a Float")
+    // public void testDivisionFloat() {
+    //     final Integer divide = Calculator.divide(2, 4);
+    //     assertEquals(0.5, divide);
+    // }
 }
