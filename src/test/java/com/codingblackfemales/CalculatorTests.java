@@ -23,4 +23,12 @@ public class CalculatorTests {
 
         assertEquals(-2, difference);
     }
+
+    @Test
+    @DisplayName("divide two numbers")
+    public void testDivision() {
+        final Integer divide = Calculator.divide(-8, -4);
+
+        assertEquals(2, divide);
+    }
 }
